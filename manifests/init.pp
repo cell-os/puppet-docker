@@ -323,7 +323,7 @@
 #   Extend the pool by specified percentage when threshold is hit.
 #
 class docker(
-  $version                           = $docker::params::version,
+  $version                           = undef,
   $ensure                            = $docker::params::ensure,
   $prerequired_packages              = $docker::params::prerequired_packages,
   $docker_cs                         = $docker::params::docker_cs,
